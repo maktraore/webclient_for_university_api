@@ -1,0 +1,5 @@
+<% @universities.each do |univ| %>
+<p><%= univ.name%>
+<%= link_to "edit", "/webclient/#{univ.id}/edit" %> |
+<%= link_to "delete", "/webclient/#{univ.id}", data: {confirm: "are you sure?"} , method: :delete %></p> 
+<% end %>

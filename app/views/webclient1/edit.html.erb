@@ -1,0 +1,4 @@
+<%= form_tag "/webclient/#{@university.id}", method: :patch do %>
+<p>Name: <input type="text" value= "<%= @university.name%>" name="name"></p>
+<p><input type="submit" value ="edit"></p>
+<% end %>
